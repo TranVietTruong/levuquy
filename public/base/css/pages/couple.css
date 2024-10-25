@@ -1,0 +1,108 @@
+.box {
+    border-radius: 5px;
+    border: 1px solid #d9e2ef;
+}
+.box-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #d7d7d7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    align-items: center;
+}
+.title-header {
+    font-size: 20px;
+}
+.back, .next {
+    font-size: 16px;
+}
+.box-content {
+    padding: 30px;
+}
+.form-info {
+    width: 100%;
+    border: 1px solid #d9e2ef;
+    border-radius: 15px;
+    box-shadow: 0 .5rem 1.5rem rgba(22, 28, 45, .1);
+    padding: 20px;
+    background-color: #ffffff;
+}
+.action {
+    background-color: #be3c4c;
+    color: #fff;
+    border-color: transparent;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.action:hover {
+    background-color: #a7303f;
+}
+.preview-img img {
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #d9e2ef;
+    border-radius: .375rem;
+    box-shadow: 0 .125rem .25rem rgba(22, 28, 45, .075);
+    padding: .25rem;
+}
+.preview-img {
+    text-align: center;
+    position: relative;
+}
+.upload {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    display: flex !important;
+    justify-content: center;
+    background-color: #0000008c;
+    width: 100%;
+}
+input[type="file"] {
+    display: none;
+}
+.upload label {
+    display: inline-block;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.info {
+    font-size: 16px;
+}
+.qr label {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    background-color: #727272;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logo {
+    width: 200px;
+    margin: auto;
+}
+
+@media (max-width: 576px) {
+    .title-header {
+        font-size: 16px;
+    }
+    .back, .next {
+        font-size: 13px;
+    }
+    .logo {
+        width: 200px;
+        margin: auto;
+    }
+}
