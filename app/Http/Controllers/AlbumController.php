@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
+use Spatie\Image\Drivers\ImageDriver;
 use Spatie\Image\Image;
 
 class AlbumController extends Controller
@@ -42,9 +43,9 @@ class AlbumController extends Controller
     public function store(Request $request) {
         $file = $request->file('image');
 
-        $imageLarge = Image::load($file->getRealPath())->width(1600)->optimize()->base64('jpg');
-        $imageSmall = Image::load($file->getRealPath())->width(500)->optimize()->base64('jpg');
-        
+        $imageLarge = Image::useImageDriver('gd')->load($file->getRealPath())->width(1600)->optimize()->base64('jpg');
+        $imageSmall = Image::useImageDriver('gd')->load($file->getRealPath())->width(500)->optimize()->base64('jpg');
+
         $large = UploadImageService::upload($imageLarge, true);
         $small = UploadImageService::upload($imageSmall, true);
 
