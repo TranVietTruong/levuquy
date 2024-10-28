@@ -9,6 +9,7 @@ use App\Models\WebsiteInformation;
 use App\Services\UploadImageService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
@@ -41,24 +42,29 @@ class AlbumController extends Controller
     }
 
     public function store(Request $request) {
-        $file = $request->file('image');
+        try {
+            $file = $request->file('image');
 
-        $imageLarge = Image::useImageDriver('gd')->load($file->getRealPath())->width(1600)->optimize()->base64('jpg');
-        $imageSmall = Image::useImageDriver('gd')->load($file->getRealPath())->width(500)->optimize()->base64('jpg');
+            $imageLarge = Image::useImageDriver('gd')->load($file->getRealPath())->width(1600)->optimize()->base64('jpg');
+            $imageSmall = Image::useImageDriver('gd')->load($file->getRealPath())->width(500)->optimize()->base64('jpg');
 
-        $large = UploadImageService::upload($imageLarge, true);
-        $small = UploadImageService::upload($imageSmall, true);
+            $large = UploadImageService::upload($imageLarge, true);
+            $small = UploadImageService::upload($imageSmall, true);
 
 //        $large = cloudinary()->upload($imageLarge, ['resource_type' => 'image'])->getSecurePath();
 //        $small = cloudinary()->upload($imageSmall, ['resource_type' => 'image'])->getSecurePath();
 
-        $album = new Album();
-        $album->small = $small;
-        $album->large = $large;
-        $album->user_id = Auth::user()->id;
-        $album->save();
+            $album = new Album();
+            $album->small = $small;
+            $album->large = $large;
+            $album->user_id = Auth::user()->id;
+            $album->save();
 
-        return $this->responseData($album);
+            return $this->responseData($album);
+        } catch (\Exception $exception) {
+            Log::error($exception->getMessage());
+            return $this->responseErrors();
+        }
     }
 
     public function update(Request $request) {
