@@ -42,15 +42,9 @@ class AlbumController extends Controller
     public function store(Request $request) {
         $file = $request->file('image');
 
-        $originalNameFile = $file->getClientOriginalName();
-        $path = Storage::disk('public')->putFileAs('', $file, $originalNameFile, 'public');
-        $path = storage_path('app/public/' . $path);
-
-        $imageLarge = Image::load($path)->width(1600)->optimize()->base64('jpg');
-        $imageSmall = Image::load($path)->width(500)->optimize()->base64('jpg');
-
-        unlink($path);
-
+        $imageLarge = Image::load($file->getRealPath())->width(1600)->optimize()->base64('jpg');
+        $imageSmall = Image::load($file->getRealPath())->width(500)->optimize()->base64('jpg');
+        
         $large = UploadImageService::upload($imageLarge, true);
         $small = UploadImageService::upload($imageSmall, true);
 
