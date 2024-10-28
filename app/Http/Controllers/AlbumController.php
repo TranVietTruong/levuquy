@@ -10,6 +10,7 @@ use App\Services\UploadImageService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
@@ -41,8 +42,14 @@ class AlbumController extends Controller
     public function store(Request $request) {
         $file = $request->file('image');
 
-        $imageLarge = Image::load($file->getRealPath())->width(1600)->optimize()->base64('jpg');
-        $imageSmall = Image::load($file->getRealPath())->width(500)->optimize()->base64('jpg');
+        $originalNameFile = $file->getClientOriginalName();
+        $path = Storage::disk('public')->putFileAs('', $file, $originalNameFile, 'public');
+        $path = storage_path('app/public/' . $path);
+
+        $imageLarge = Image::load($path)->width(1600)->optimize()->base64('jpg');
+        $imageSmall = Image::load($path)->width(500)->optimize()->base64('jpg');
+
+        unlink($path);
 
         $large = UploadImageService::upload($imageLarge, true);
         $small = UploadImageService::upload($imageSmall, true);
