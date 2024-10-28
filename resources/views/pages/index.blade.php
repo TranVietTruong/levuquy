@@ -26,13 +26,6 @@
     <div>
         <span>Copyright © 2024 | levuquy - Vì cuộc sống hạnh phúc!</span>
     </div>
-    <div class="lien-he">
-        <span class="mr-2"><a href="">Trang chủ</a></span>
-        <span class="mr-2"><a href="">Giới thiệu</a></span>
-        <span class="mr-2"><a href="">Chính sách bảo mật</a></span>
-        <span class="mr-2"><a href="">Điều khoản sử dụng</a></span>
-        <span class="mr-2"><a href="">Liên hệ</a></span>
-    </div>
 </div>
 </body>
 </html>
