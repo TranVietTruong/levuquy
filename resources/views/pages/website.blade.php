@@ -70,7 +70,7 @@
                         </div>
                         <div class="info">
                             <div class="mt-5">
-                                <label for="">Link website: ( https://@{{form.link_website}}.levuquy.info )</label>
+                                <label for="">Link website: ( https://@{{form.link_website}}.levuquy.info.vn )</label>
                                 <div class="d-flex align-center">
                                     <div style="font-weight: normal; font-size: 14px;">
                                         https://
@@ -79,7 +79,7 @@
                                         <el-input style="padding: 0" v-model="form.link_website" ></el-input>
                                     </div>
                                     <div style="font-weight: normal; font-size: 14px;">
-                                        .levuquy.info
+                                        .levuquy.info.vn
                                     </div>
 
                                     <div class="ml-2">
@@ -89,7 +89,7 @@
                                         </el-button>
                                     </div>
                                     <div class="ml-2">
-                                        <a :href="'https://'+form.link_website+'.levuquy.info'" target="_blank">
+                                        <a :href="'https://'+form.link_website+'.levuquy.info.vn'" target="_blank">
                                             <el-button type="success">
                                                 <i class="el-icon-view"></i>
                                                 Xem website
@@ -352,7 +352,7 @@
             methods: {
                 async copyLink() {
                     try {
-                        await navigator.clipboard.writeText('https://my.levuquy.info/'+this.form.link_website);
+                        await navigator.clipboard.writeText(`https://${this.form.link_website}.levuquy.info.vn`);
                         this.$notify({
                             title: 'Thông báo',
                             message: 'Copy thành công',
