@@ -302,7 +302,7 @@ body {
     text-align: center;
 }
 .footer {
-    position: fixed;
+    /*position: fixed;*/
     padding: 15px;
     background-color: #c9c9c9;
     text-align: center;
@@ -330,4 +330,9 @@ body {
 }
 .align-center {
     align-items: center;
+}
+
+h1.text-center.mau_thiep {
+    color: #f23783;
+    font-weight: 900;
 }

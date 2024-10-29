@@ -14,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.index');
+    $templates = \App\Models\Template::where('status', 1)->orderBy('order')->get();
+    return view('pages.index', [
+        'templates' => $templates
+    ]);
 })->name('home');
 
 

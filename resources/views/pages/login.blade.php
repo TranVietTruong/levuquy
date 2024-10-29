@@ -45,7 +45,9 @@
                     <el-button @click="login" type="primary"> Đăng nhập </el-button>
                 </div>
                 <div class="text-center" style="font-size: 16px;">
-                    Bạn chưa có tài khoản? <span class="register">Đăng ký</span>
+                    Bạn chưa có tài khoản? <a href="https://www.facebook.com/thiepcuoicuatui">
+                        <span class="register">Đăng ký</span>
+                    </a>
                 </div>
             </div>
         </div>
