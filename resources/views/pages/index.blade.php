@@ -51,7 +51,7 @@
                 </li>
                 <li class="d-flex justify-center align-center">
                     <img style="width: 35px;" src="{{asset('base/icon/check.png')}}" alt="">
-                    Được sử dụng tất các các mẫu theo sở thích
+                    Được sử dụng, thay đổi tất các các mẫu theo sở thích
                 </li>
 
                 <li class="d-flex justify-center align-center">
