@@ -22,6 +22,9 @@
             border-radius: 5px;
             box-shadow: 2px 2px 9px;
         }
+        .check {
+            width: 500px;
+        }
         @media (max-width: 576px) {
             .check {
                 font-size: 13px;
@@ -49,7 +52,7 @@
         <a href="#templates">
             <button class="button-primary">Xem các mẫu thiệp</button>
         </a>
-        <div class="mt-3 check" style="width: 500px; margin: 0 auto; font-size: 16px; font-weight: normal">
+        <div class="mt-3 check" style="margin: 0 auto; font-size: 16px; font-weight: normal">
             <ul class="">
                 <li class="d-flex align-center">
                     <img style="width: 35px;" src="{{asset('base/icon/check.png')}}" alt="">
