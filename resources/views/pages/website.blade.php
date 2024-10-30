@@ -70,7 +70,7 @@
                         </div>
                         <div class="info">
                             <div class="mt-5">
-                                <label for="">Link website: ( https://@{{form.link_website}}.levuquy.info.vn )</label>
+                                <label for="">Điền link website</label>
                                 <div class="d-flex align-center">
                                     <div style="font-weight: normal; font-size: 14px;">
                                         https://
