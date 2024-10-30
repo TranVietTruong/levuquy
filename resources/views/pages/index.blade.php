@@ -49,7 +49,7 @@
             <ul class="">
                 <li class="d-flex align-center">
                     <img style="width: 35px;" src="{{asset('base/icon/check.png')}}" alt="">
-                    Sở hữu website vĩnh viễn, thời gian sử dụng vĩnh viễn
+                    Sở hữu website vĩnh viễn
                 </li>
                 <li class="d-flex align-center">
                     <img style="width: 35px;" src="{{asset('base/icon/check.png')}}" alt="">
