@@ -23,7 +23,7 @@
             box-shadow: 2px 2px 9px;
         }
         .check {
-            width: 500px;
+            width: 400px;
         }
         @media (max-width: 576px) {
             .check {
@@ -64,7 +64,7 @@
                 </li>
                 <li class="d-flex align-center">
                     <img style="width: 35px;" src="{{asset('base/icon/check.png')}}" alt="">
-                    Được sử dụng, thay đổi tất các các mẫu theo sở thích
+                    Được sử dụng tất cả các các mẫu theo sở thích
                 </li>
 
                 <li class="d-flex align-center">
