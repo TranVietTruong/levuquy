@@ -45,30 +45,30 @@
         <a href="#templates">
             <button class="button-primary">Xem các mẫu thiệp</button>
         </a>
-        <div class="mt-3 check">
-            <ul>
-                <li class="d-flex justify-center align-center">
+        <div class="mt-3 check" style="width: 500px; margin: 0 auto">
+            <ul class="">
+                <li class="d-flex align-center">
                     <img style="width: 35px;" src="{{asset('base/icon/check.png')}}" alt="">
                     Sở hữu website vĩnh viễn, thời gian sử dụng vĩnh viễn
                 </li>
-                <li class="d-flex justify-center align-center">
+                <li class="d-flex align-center">
                     <img style="width: 35px;" src="{{asset('base/icon/check.png')}}" alt="">
                     Không tốn chi phí duy trì hàng tháng
                 </li>
-                <li class="d-flex justify-center align-center">
+                <li class="d-flex align-center">
                     <img style="width: 35px;" src="{{asset('base/icon/check.png')}}" alt="">
                     Được sử dụng, thay đổi tất các các mẫu theo sở thích
                 </li>
 
-                <li class="d-flex justify-center align-center">
+                <li class="d-flex align-center">
                     <img style="width: 35px;" src="{{asset('base/icon/check.png')}}" alt="">
                     Chỉnh sửa tên miền theo cá nhân
                 </li>
-                <li class="d-flex justify-center align-center">
+                <li class="d-flex align-center">
                     <img style="width: 35px;" src="{{asset('base/icon/check.png')}}" alt="">
                     Hỗ trợ chỉnh sửa 24/24
                 </li>
-                <li class="d-flex justify-center align-center">
+                <li class="d-flex  align-center">
                     <img style="width: 35px;" src="{{asset('base/icon/check.png')}}" alt="">
                     Tạo tài khoản chỉ với 200.000đ
                 </li>
