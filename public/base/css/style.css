@@ -280,7 +280,7 @@ img {
 }
 body {
     background: url("https://i.imgur.com/6ZIx1mf.png");
-    font-family: 'Quicksand', sans-serif;
+    /*font-family: 'Quicksand', sans-serif;*/
     font-size: 20px;
     font-weight: 600;
     color: #506690;
