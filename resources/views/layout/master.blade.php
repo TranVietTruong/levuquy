@@ -18,7 +18,9 @@
 @endif
 <div class="logo">
     <div>
-        <img src="https://i.imgur.com/lLIaYHI.png" alt="">
+        <a href="/">
+            <img src="https://i.imgur.com/lLIaYHI.png" alt="">
+        </a>
     </div>
 </div>
 @yield('content')

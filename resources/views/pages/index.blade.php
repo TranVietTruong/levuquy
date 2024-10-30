@@ -33,7 +33,9 @@
 <div style="min-height: 100vh">
     <div class="logo">
         <div>
-            <img src="https://i.imgur.com/lLIaYHI.png" alt="">
+            <a href="/">
+                <img src="https://i.imgur.com/lLIaYHI.png" alt="">
+            </a>
         </div>
     </div>
     <div class="content" style="padding: 20px;">
