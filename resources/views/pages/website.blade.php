@@ -75,22 +75,23 @@
                                     <div style="font-weight: normal; font-size: 14px;">
                                         https://
                                     </div>
-                                    <div class="link">
+                                    <div class="link" style="min-width: 150px;">
                                         <el-input style="padding: 0" v-model="form.link_website" ></el-input>
                                     </div>
                                     <div style="font-weight: normal; font-size: 14px;">
                                         .levuquy.info.vn
                                     </div>
-
+                                </div>
+                                <div class="d-flex mt-2 mb-4">
                                     <div class="ml-2">
-                                        <el-button @click="copyLink" type="info">
+                                        <el-button size="mini" @click="copyLink" type="info">
                                             <i class="el-icon-copy-document"></i>
                                             Copy link
                                         </el-button>
                                     </div>
                                     <div class="ml-2">
                                         <a :href="'https://'+form.link_website+'.levuquy.info.vn'" target="_blank">
-                                            <el-button type="success">
+                                            <el-button size="mini" type="success">
                                                 <i class="el-icon-view"></i>
                                                 Xem website
                                             </el-button>
