@@ -19,7 +19,7 @@
 @section('content')
     <div id="app">
         <div class="form-login">
-            <div style="width: 400px">
+            <div style="width: 400px; padding: 20px;">
                 <div class="mb-3">
                     <label for="phone">Nhập số điện thoại</label>
                     <el-input

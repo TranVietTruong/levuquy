@@ -30,7 +30,7 @@
             <img src="https://i.imgur.com/lLIaYHI.png" alt="">
         </div>
     </div>
-    <div class="content">
+    <div class="content" style="padding: 20px;">
         <h1 style="color: #f23783;">Nền tảng tạo Website đám cưới & Thiệp cưới online</h1>
         <p style="font-size: 18px; color: #f23783;">Cho đám cưới trở nên độc đáo hơn theo cách riêng của bạn!</p>
         <a href="{{ route('login') }}">
