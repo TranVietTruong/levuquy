@@ -60,7 +60,7 @@
                                 <div class="upload">
                                     <label for="input_anh_website">
                                         Thay đổi hình ảnh
-                                        <input @change="changeImage('anh_website')" type="file" id="input_anh_website">
+                                        <input @change="changeImage('anh_website')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_website">
                                     </label>
                                 </div>
                             </div>

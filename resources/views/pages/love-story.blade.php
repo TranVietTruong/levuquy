@@ -67,7 +67,7 @@
                                     <div class="upload">
                                         <label :for="'input_anh'+index">
                                             Thay đổi
-                                            <input @change="changeImage('anh'+index, index)" type="file" :id="'input_anh'+index">
+                                            <input @change="changeImage('anh'+index, index)" accept="image/png, image/jpeg, image/jpg" type="file" :id="'input_anh'+index">
                                         </label>
                                     </div>
                                 </div>

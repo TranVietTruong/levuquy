@@ -7,7 +7,7 @@
                 <div class="upload">
                     <label for="input_background_video_cuoi">
                         ẢNH BACKGROUND KHỐI VIDEO CƯỚI- Thay đổi
-                        <input @change="changeImage('background_video_cuoi')" type="file" id="input_background_video_cuoi">
+                        <input @change="changeImage('background_video_cuoi')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_video_cuoi">
                     </label>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 <div class="upload">
                     <label for="input_background_text">
                         ẢNH BACKGROUND KHỐI TEXT- Thay đổi
-                        <input @change="changeImage('background_text')" type="file" id="input_background_text">
+                        <input @change="changeImage('background_text')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_text">
                     </label>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                 <div class="upload">
                     <label for="input_anh_home_trai">
                         ẢNH HOME TRÁI - Thay đổi
-                        <input @change="changeImage('anh_home_trai', 'popup')" type="file" id="input_anh_home_trai">
+                        <input @change="changeImage('anh_home_trai', 'popup')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_home_trai">
                     </label>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                 <div class="upload">
                     <label for="input_anh_home_giua">
                         ẢNH HOME GIỮA - Thay đổi
-                        <input @change="changeImage('anh_home_giua', 'popup')" type="file" id="input_anh_home_giua">
+                        <input @change="changeImage('anh_home_giua', 'popup')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_home_giua">
                     </label>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                 <div class="upload">
                     <label for="input_anh_home_phai">
                         ẢNH HOME PHẢI - Thay đổi
-                        <input @change="changeImage('anh_home_phai', 'popup')" type="file" id="input_anh_home_phai">
+                        <input @change="changeImage('anh_home_phai', 'popup')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_home_phai">
                     </label>
                 </div>
             </div>

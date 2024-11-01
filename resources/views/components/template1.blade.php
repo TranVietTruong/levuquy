@@ -7,7 +7,7 @@
                 <div class="upload">
                     <label for="input_background_slider_1">
                         ẢNH BACKGROUND SLIDER 1- Thay đổi
-                        <input @change="changeImage('background_slider_1')" type="file" id="input_background_slider_1">
+                        <input @change="changeImage('background_slider_1')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_slider_1">
                     </label>
                 </div>
             </div>
@@ -20,7 +20,7 @@
                 <div class="upload">
                     <label for="input_background_slider_2">
                         ẢNH BACKGROUND SLIDER 2- Thay đổi
-                        <input @change="changeImage('background_slider_2')" type="file" id="input_background_slider_2">
+                        <input @change="changeImage('background_slider_2')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_slider_2">
                     </label>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                 <div class="upload">
                     <label for="input_background_thoi_gian">
                         ẢNH BACKGROUND KHỐI THỜI GIAN - Thay đổi
-                        <input @change="changeImage('background_thoi_gian')" type="file" id="input_background_thoi_gian">
+                        <input @change="changeImage('background_thoi_gian')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_thoi_gian">
                     </label>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 <div class="upload">
                     <label for="input_background_love_quote">
                         ẢNH BACKGROUND KHỐI LOVE QUOTE - Thay đổi
-                        <input @change="changeImage('background_love_quote')" type="file" id="input_background_love_quote">
+                        <input @change="changeImage('background_love_quote')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_love_quote">
                     </label>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                 <div class="upload">
                     <label for="input_background_thank_you">
                         ẢNH BACKGROUND KHỐI THANK YOU- Thay đổi
-                        <input @change="changeImage('background_thank_you')" type="file" id="input_background_thank_you">
+                        <input @change="changeImage('background_thank_you')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_thank_you">
                     </label>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                 <div class="upload">
                     <label for="input_anh_su_kien_cuoi">
                         ẢNH KHỐI SỰ KIỆN CƯỚI - Thay đổi
-                        <input @change="changeImage('anh_su_kien_cuoi', 'popup')" type="file" id="input_anh_su_kien_cuoi">
+                        <input @change="changeImage('anh_su_kien_cuoi', 'popup')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_su_kien_cuoi">
                     </label>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                 <div class="upload">
                     <label for="input_anh_love_quote">
                         ẢNH KHỐI LOVE QUOTE - Thay đổi
-                        <input @change="changeImage('anh_love_quote', 'popup')" type="file" id="input_anh_love_quote">
+                        <input @change="changeImage('anh_love_quote', 'popup')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_love_quote">
                     </label>
                 </div>
             </div>

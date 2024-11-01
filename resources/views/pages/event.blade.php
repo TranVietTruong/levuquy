@@ -62,7 +62,7 @@
                                         <div class="upload">
                                             <label for="input_anh_su_kien_nam">
                                                 Thay đổi hình ảnh
-                                                <input @change="changeImage('anh_su_kien_nam')" type="file" id="input_anh_su_kien_nam">
+                                                <input @change="changeImage('anh_su_kien_nam')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_su_kien_nam">
                                             </label>
                                         </div>
                                     </div>
@@ -115,7 +115,7 @@
                                         <div class="upload">
                                             <label for="input_anh_su_kien_nu">
                                                 Thay đổi hình ảnh
-                                                <input @change="changeImage('anh_su_kien_nu')" type="file" id="input_anh_su_kien_nu">
+                                                <input @change="changeImage('anh_su_kien_nu')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_su_kien_nu">
                                             </label>
                                         </div>
                                     </div>

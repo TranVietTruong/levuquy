@@ -7,7 +7,7 @@
                 <div class="upload">
                     <label for="input_anh_couple_1">
                         ẢNH CÔ DÂU & CHÚ RỂ 1 - Thay đổi
-                        <input @change="changeImage('anh_couple_1', '23')" type="file" id="input_anh_couple_1">
+                        <input @change="changeImage('anh_couple_1', '23')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_couple_1">
                     </label>
                 </div>
             </div>
@@ -20,7 +20,7 @@
                 <div class="upload">
                     <label for="input_anh_couple_2">
                         ẢNH CÔ DÂU & CHÚ RỂ 2 - Thay đổi
-                        <input @change="changeImage('anh_couple_2', '25')" type="file" id="input_anh_couple_2">
+                        <input @change="changeImage('anh_couple_2', '25')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_couple_2">
                     </label>
                 </div>
             </div>

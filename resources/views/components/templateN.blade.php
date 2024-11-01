@@ -7,7 +7,7 @@
                     <div class="upload">
                         <label for="input_background_home">
                             HOME - Thay đổi
-                            <input @change="changeImage('background_home')" type="file" id="input_background_home">
+                            <input @change="changeImage('background_home')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_home">
                         </label>
                     </div>
                 </div>
@@ -20,7 +20,7 @@
                     <div class="upload">
                         <label for="input_background_cap_doi">
                             CẶP ĐÔI - Thay đổi
-                            <input @change="changeImage('background_cap_doi')" type="file" id="input_background_cap_doi">
+                            <input @change="changeImage('background_cap_doi')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_cap_doi">
                         </label>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                     <div class="upload">
                         <label for="input_background_cau_chuyen_tinh_yeu">
                             CÂU CHUYỆN TÌNH YÊU - Thay đổi
-                            <input @change="changeImage('background_cau_chuyen_tinh_yeu')" type="file" id="input_background_cau_chuyen_tinh_yeu">
+                            <input @change="changeImage('background_cau_chuyen_tinh_yeu')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_cau_chuyen_tinh_yeu">
                         </label>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                     <div class="upload">
                         <label for="input_background_phu_dau_phu_re">
                             PHÙ DÂU & PHÙ RỂ - Thay đổi
-                            <input @change="changeImage('background_phu_dau_phu_re')" type="file" id="input_background_phu_dau_phu_re">
+                            <input @change="changeImage('background_phu_dau_phu_re')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_phu_dau_phu_re">
                         </label>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                     <div class="upload">
                         <label for="input_background_album_hinh_cuoi">
                             ALBUM HÌNH CƯỚI - Thay đổi
-                            <input @change="changeImage('background_album_hinh_cuoi')" type="file" id="input_background_album_hinh_cuoi">
+                            <input @change="changeImage('background_album_hinh_cuoi')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_album_hinh_cuoi">
                         </label>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                     <div class="upload">
                         <label for="input_background_su_kien_cuoi">
                             SỰ KIỆN CƯỚI - Thay đổi
-                            <input @change="changeImage('background_su_kien_cuoi')" type="file" id="input_background_su_kien_cuoi">
+                            <input @change="changeImage('background_su_kien_cuoi')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_su_kien_cuoi">
                         </label>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                     <div class="upload">
                         <label for="input_background_video_cuoi">
                             VIDEO CƯỚI - Thay đổi
-                            <input @change="changeImage('background_video_cuoi')" type="file" id="input_background_video_cuoi">
+                            <input @change="changeImage('background_video_cuoi')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_video_cuoi">
                         </label>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                     <div class="upload">
                         <label for="input_background_loi_cam_ta">
                             LỜI CẢM TẠ - Thay đổi
-                            <input @change="changeImage('background_loi_cam_ta')" type="file" id="input_background_loi_cam_ta">
+                            <input @change="changeImage('background_loi_cam_ta')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_loi_cam_ta">
                         </label>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                     <div class="upload">
                         <label for="input_background_loi_cam_ta">
                             MỪNG CƯỚI - Thay đổi
-                            <input @change="changeImage('background_loi_cam_ta')" type="file" id="input_background_loi_cam_ta">
+                            <input @change="changeImage('background_loi_cam_ta')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_background_loi_cam_ta">
                         </label>
                     </div>
                 </div>

@@ -55,7 +55,7 @@
                                     <div class="upload">
                                         <label for="input_anh_chu_re">
                                             Thay đổi hình ảnh
-                                            <input @change="changeImage('anh_chu_re')" type="file" id="input_anh_chu_re">
+                                            <input @change="changeImage('anh_chu_re')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_chu_re">
                                         </label>
                                     </div>
                                 </div>
@@ -107,7 +107,7 @@
                                                 <img id="anh_qr_chu_re" :src="form.anh_qr_chu_re" alt="">
                                             </div>
                                             <label for="input_anh_qr_chu_re">Thay đổi</label>
-                                            <input @change="changeImage('anh_qr_chu_re')" type="file" id="input_anh_qr_chu_re">
+                                            <input @change="changeImage('anh_qr_chu_re')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_qr_chu_re">
                                         </div>
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@
                                     <div class="upload">
                                         <label for="input_anh_co_dau">
                                             Thay đổi hình ảnh
-                                            <input @change="changeImage('anh_co_dau')" type="file" id="input_anh_co_dau">
+                                            <input @change="changeImage('anh_co_dau')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_co_dau">
                                         </label>
                                     </div>
                                 </div>
@@ -175,7 +175,7 @@
                                                 <img id="anh_qr_co_dau" :src="form.anh_qr_co_dau" alt="">
                                             </div>
                                             <label for="input_anh_qr_co_dau">Thay đổi</label>
-                                            <input @change="changeImage('anh_qr_co_dau')" type="file" id="input_anh_qr_co_dau">
+                                            <input @change="changeImage('anh_qr_co_dau')" accept="image/png, image/jpeg, image/jpg" type="file" id="input_anh_qr_co_dau">
                                         </div>
                                     </div>
                                 </div>
