@@ -68,10 +68,10 @@
                                         <label for="">Tên ngắn gọn chú rể</label>
                                         <el-input v-model="form.ten_chu_re_ngan_gon" ></el-input>
                                     </div>
-                                    <div class="mt-3">
-                                        <label for="">Ngày sinh</label>
-                                        <el-input v-model="form.ngay_sinh_chu_re" ></el-input>
-                                    </div>
+{{--                                    <div class="mt-3">--}}
+{{--                                        <label for="">Ngày sinh</label>--}}
+{{--                                        <el-input v-model="form.ngay_sinh_chu_re" ></el-input>--}}
+{{--                                    </div>--}}
                                     <div class="mt-3">
                                         <label for="">Giới thiệu</label>
                                         <el-input type="textarea" :rows="3" v-model="form.gioi_thieu_chu_re" ></el-input>
@@ -136,10 +136,10 @@
                                         <label for="">Tên ngắn gọn cô dâu</label>
                                         <el-input v-model="form.ten_co_dau_ngan_gon" ></el-input>
                                     </div>
-                                    <div class="mt-3">
-                                        <label for="">Ngày sinh</label>
-                                        <el-input v-model="form.ngay_sinh_co_dau" ></el-input>
-                                    </div>
+{{--                                    <div class="mt-3">--}}
+{{--                                        <label for="">Ngày sinh</label>--}}
+{{--                                        <el-input v-model="form.ngay_sinh_co_dau" ></el-input>--}}
+{{--                                    </div>--}}
                                     <div class="mt-3">
                                         <label for="">Giới thiệu</label>
                                         <el-input type="textarea" :rows="3" v-model="form.gioi_thieu_co_dau" ></el-input>

@@ -57,7 +57,6 @@ class CoupleController extends Controller
         $rules = [
             'ten_chu_re' => 'required|max:100',
             'ten_chu_re_ngan_gon' => 'required|max:100',
-            'ngay_sinh_chu_re' => 'required|max:100',
             'gioi_thieu_chu_re' => 'required|max:1000',
 //            'ho_ten_bo_chu_re' => 'required|max:100',
 //            'ho_ten_me_chu_re' => 'required|max:100',
@@ -67,7 +66,6 @@ class CoupleController extends Controller
             'chi_nhanh_chu_re' => 'required|max:100',
             'ten_co_dau' => 'required|max:100',
             'ten_co_dau_ngan_gon' => 'required|max:100',
-            'ngay_sinh_co_dau' => 'required|max:100',
             'gioi_thieu_co_dau' => 'required|max:1000',
 //            'ho_ten_bo_co_dau' => 'required|max:100',
 //            'ho_ten_me_co_dau' => 'required|max:100',
@@ -79,8 +77,6 @@ class CoupleController extends Controller
         $messages = [
             'ten_chu_re.required' => 'Bạn hãy điền họ và tên chú rể',
             'ten_chu_re.max' => 'Họ và tên chú rể tối đa 100 kí tự',
-            'ngay_sinh_chu_re.required' => 'Bạn hãy điền ngày sinh của chú rể',
-            'ngay_sinh_chu_re.max' => 'Ngày sinh của chú rể tối đa 100 kí tự',
             'gioi_thieu_chu_re.required' => 'Bạn hãy điền giới thiệu về chú rể',
             'gioi_thieu_chu_re.max' => 'Giới thiệu về chú rể tối đa 1000 kí tự',
             'ho_ten_bo_chu_re.required' => 'Bạn hãy điền họ tên bố của chú rể',
@@ -97,8 +93,6 @@ class CoupleController extends Controller
             'chi_nhanh_chu_re.max' => 'Chi nhánh tài khoản của chú rể tối đa 100 kí tự',
             'ten_co_dau.required' => 'Bạn hãy điền họ và tên cô dâu',
             'ten_co_dau.max' => 'Họ và tên cô dâu tối đa 100 kí tự',
-            'ngay_sinh_co_dau.required' => 'Bạn hãy điền ngày sinh của cô dâu',
-            'ngay_sinh_co_dau.max' => 'Ngày sinh của cô dâu tối đa 100 kí tự',
             'gioi_thieu_co_dau.required' => 'Bạn hãy điền giới thiệu về cô dâu',
             'gioi_thieu_co_dau.max' => 'Giới thiệu về cô dâu tối đa 1000 kí tự',
             'ho_ten_bo_co_dau.required' => 'Bạn hãy điền họ tên bố của cô dâu',
