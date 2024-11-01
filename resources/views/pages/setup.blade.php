@@ -125,6 +125,8 @@
                                     @include('components.template16')
                                 @elseif ($website && $website->template_id === 17)
                                     @include('components.template17')
+                                @elseif ($website && $website->template_id === 23)
+                                    @include('components.template23')
                                 @elseif ($website && $website->template_id === 25)
                                     @include('components.template25')
                                 @else
@@ -234,7 +236,12 @@
                         this.size = { width: 1280, height: 1920 }
                         this.boundary = { width: 190, height: 338}
                         this.viewPort = { width: 185, height: 330 }
-                    } else  {
+                    } else if(type === '23')  {
+                        this.size = { width: 1000, height: 1000 }
+                        this.boundary = { width: 338, height: 338}
+                        this.viewPort = { width: 330, height: 330 }
+                    }
+                    else  {
                         this.size = { width: 1920, height: 1080 }
                         this.boundary = { width: 338, height: 190}
                         this.viewPort = { width: 330, height: 185 }
