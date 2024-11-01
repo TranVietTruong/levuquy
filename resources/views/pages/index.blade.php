@@ -26,6 +26,22 @@
         .check {
             width: 400px;
         }
+        .step {
+            border: 1px solid red;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+        }
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: cursive;
+            color: #4e4eff;
+            margin-right: 10px;
+        }
         @media (max-width: 576px) {
             .check {
                 font-size: 13px;
@@ -53,7 +69,7 @@
         <a href="#templates">
             <button class="button-primary">Xem các mẫu thiệp</button>
         </a>
-        <div class="mt-3 check" style="margin: 0 auto; font-size: 16px; font-weight: normal">
+        <div class="mt-5 check" style="margin: 0 auto; font-size: 16px; font-weight: normal">
             <ul class="">
                 <li class="d-flex align-center">
                     <img style="width: 35px;" src="{{asset('base/icon/check.png')}}" alt="">
@@ -81,6 +97,31 @@
                     Tạo tài khoản chỉ với 200.000đ
                 </li>
             </ul>
+        </div>
+    </div>
+    <div class="text-center mt-5 mb-5" style="padding: 20px;">
+        <h1 style="color: #f23783;">3 Bước để tạo thiệp cưới online</h1>
+        <div class="d-flex justify-center">
+            <div>
+                <div class="step mb-2">
+                    <div class="number">01</div>
+                    <div>
+                        ĐĂNG KÝ TÀI KHOẢN
+                    </div>
+                </div>
+                <div class="step mb-2">
+                    <div class="number">02</div>
+                    <div>
+                        TẠO, TUỲ CHỈNH THÔNG TIN & HÌNH ẢNH WEB
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="number">03</div>
+                    <div>
+                        CHIA SẺ WEB ĐÁM CƯỚI VỚI MỌI NGƯỜI
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
