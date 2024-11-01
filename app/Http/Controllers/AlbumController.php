@@ -45,14 +45,14 @@ class AlbumController extends Controller
         try {
             $file = $request->file('image');
 
-            $imageLarge = Image::useImageDriver('gd')->load($file->getRealPath())->width(1600)->optimize()->base64('jpg');
+            $imageLarge = Image::useImageDriver('gd')->load($file->getRealPath())->width(1000)->optimize()->base64('jpg');
             $imageSmall = Image::useImageDriver('gd')->load($file->getRealPath())->width(500)->optimize()->base64('jpg');
 
             $large = UploadImageService::upload($imageLarge, true);
             $small = UploadImageService::upload($imageSmall, true);
 
-//        $large = cloudinary()->upload($imageLarge, ['resource_type' => 'image'])->getSecurePath();
-//        $small = cloudinary()->upload($imageSmall, ['resource_type' => 'image'])->getSecurePath();
+//            $large = cloudinary()->upload($imageLarge, ['resource_type' => 'image'])->getSecurePath();
+//            $small = cloudinary()->upload($imageSmall, ['resource_type' => 'image'])->getSecurePath();
 
             $album = new Album();
             $album->small = $small;
