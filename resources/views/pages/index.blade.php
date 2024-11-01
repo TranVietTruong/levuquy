@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('base/css/normalize.css') }}">
     <link rel="stylesheet" href="{{ asset('base/css/skeleton.css') }}">
     <link rel="stylesheet" href="{{ asset('base/css/style.css') }}">
+
     <style>
         .img-preview {
             width: 100%;
@@ -88,7 +89,7 @@
     <div class="container">
         <div class="row list-template mt-3">
             @foreach($templates as $template)
-            <div class="four columns mt-5">
+            <div class="col-md-4 col-12 mt-5">
                 <div class="preview">
                     <div class="img-preview">
                         <img src="{{$template->avatar}}" alt="">
