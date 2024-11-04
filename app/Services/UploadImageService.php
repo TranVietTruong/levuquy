@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 class UploadImageService {
     public static function upload($image, $base64 = false) {
         if (!$base64) {
-            $imageBase64 = base64_encode(file_get_contents($image->getRealPath()));
+            $imageBase64 = base64_encode(file_get_contents($image));
         } else {
             $imageBase64 = base64_encode(UploadImageService::decodeBase64Image($image));
         }
