@@ -234,6 +234,50 @@ class UploadImageCommand extends Command
             }
 
             Log::info('Done website_informations');
+
+
+            $rows = DB::table('albums')
+                ->whereRaw("small REGEXP '$rgx'")
+                ->orWhereRaw("large REGEXP '$rgx'")
+                ->get();
+            foreach ($rows as $row) {
+                if (str_contains($row->small, $rgx)) {
+                    $anh = $row->small;
+                    $anh = str_replace(config('app.url'), '', $anh);
+                    $anh = explode('/', $anh)[1];
+                    $path = storage_path('app/public/').$anh;
+                    $link = UploadImageService::upload($path);
+
+                    if ($link) {
+                        DB::table('albums')->where('id', $row->id)->update(['small' => $link]);
+
+                        $exist = Storage::disk('public')->exists($anh);
+                        if($exist) {
+                            Storage::disk('public')->delete($anh);
+                        }
+                    }
+                }
+                if (str_contains($row->large, $rgx)) {
+                    $anh = $row->large;
+                    $anh = str_replace(config('app.url'), '', $anh);
+                    $anh = explode('/', $anh)[1];
+                    $path = storage_path('app/public/').$anh;
+                    $link = UploadImageService::upload($path);
+
+                    if ($link) {
+                        DB::table('albums')->where('id', $row->id)->update(['large' => $link]);
+
+                        $exist = Storage::disk('public')->exists($anh);
+                        if($exist) {
+                            Storage::disk('public')->delete($anh);
+                        }
+                    }
+                }
+
+            }
+
+            Log::info('Done albums');
+
             Log::info('END');
         }
         catch (\Exception $exception) {
