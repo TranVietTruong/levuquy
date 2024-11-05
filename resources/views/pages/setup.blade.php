@@ -125,6 +125,8 @@
                                     @include('components.template16')
                                 @elseif ($website && $website->template_id === 17)
                                     @include('components.template17')
+                                @elseif ($website && $website->template_id === 20)
+                                    @include('components.template20')
                                 @elseif ($website && $website->template_id === 23)
                                     @include('components.template23')
                                 @elseif ($website && $website->template_id === 25)
