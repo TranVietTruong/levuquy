@@ -119,7 +119,9 @@
                                         </div>
                                     </el-col>
                                 </el-row>
-                                @if ($website && $website->template_id === 9)
+                                @if ($website && $website->template_id === 4)
+                                    @include('components.template4')
+                                @elseif ($website && $website->template_id === 9)
                                     @include('components.template9')
                                 @elseif ($website && $website->template_id === 16)
                                     @include('components.template16')
